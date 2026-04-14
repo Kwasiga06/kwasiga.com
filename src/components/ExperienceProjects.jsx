@@ -60,14 +60,8 @@ export const ExperienceProjects = () => {
                 Software Engineer Intern
               </p>
               <p style={{ fontFamily: "var(--mono)", margin: "0 0 0.75rem", fontSize: "0.88rem", lineHeight: 1.9, color: "var(--text-h)" }}>
-                Contributed to the development of an enterprise HR and payroll management platform serving 260+ client organizations across West Africa.
+                Contributed to the development of an enterprise HR and payroll management platform serving 260+ client organizations across West Africa. Built REST API endpoints for managing employee records, payroll processing, and database interactions. 
               </p>
-              <ul style={{ fontFamily: "var(--mono)", margin: 0, paddingLeft: "1.2rem", fontSize: "0.88rem", lineHeight: 1.9, color: "var(--text-h)", display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-                <li>Built REST API endpoints for managing employee records, payroll processing, and database interactions.</li>
-                <li>Designed and implemented SQL database schemas with indexing, reducing average query response time and improving system performance.</li>
-                <li>Added input validation and error handling, decreasing back-end service errors and improving data integrity for payroll operations.</li>
-                <li>Collaborated with senior engineers to review architecture decisions and align with best practices for enterprise data modeling.</li>
-              </ul>
               <p style={{ fontFamily: "var(--mono)", margin: "0.75rem 0 0", fontSize: "0.7rem", opacity: 0.5 }}>
                 .NET · C# · Python · SQL
               </p>
