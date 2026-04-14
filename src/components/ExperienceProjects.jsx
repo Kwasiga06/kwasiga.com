@@ -18,7 +18,7 @@ export const ExperienceProjects = () => {
             cursor: "pointer",
             fontSize: "1.5rem",
             fontWeight: "bold",
-            color: activeTab === "experience" ? "inherit" : "rgba(255,255,255,0.4)",
+            color: activeTab === "experience" ? "inherit" : "rgba(255,255,255,0.25)",
             borderBottom: activeTab === "experience" ? "2px solid currentColor" : "2px solid transparent",
             paddingBottom: "0.25rem",
             transition: "color 0.2s, border-color 0.2s",
@@ -34,7 +34,7 @@ export const ExperienceProjects = () => {
             cursor: "pointer",
             fontSize: "1.5rem",
             fontWeight: "bold",
-            color: activeTab === "projects" ? "inherit" : "rgba(255,255,255,0.4)",
+            color: activeTab === "projects" ? "inherit" : "rgba(255,255,255,0.25)",
             borderBottom: activeTab === "projects" ? "2px solid currentColor" : "2px solid transparent",
             paddingBottom: "0.25rem",
             transition: "color 0.2s, border-color 0.2s",
@@ -67,12 +67,18 @@ export const ExperienceProjects = () => {
               <p style={{ fontFamily: "var(--sans)", margin: "0 0 0.75rem", fontSize: "0.85rem", opacity: 0.5, letterSpacing: "0.04em"}}>
                 Software Engineer Intern
               </p>
+              <p style={{ fontFamily: "var(--sans)", margin: "0 0 0.75rem", fontSize: "0.95rem", lineHeight: 1.85, opacity: 0.85 }}>
+                Contributed to the development of an enterprise HR and payroll management platform serving 260+ client organizations across West Africa.
+              </p>
               <ul style={{ fontFamily: "var(--sans)", margin: 0, paddingLeft: "1.2rem", fontSize: "0.95rem", lineHeight: 1.85, opacity: 0.85, display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-                <li>Designed and developed a REST API using C#, .NET, and MySQL to support internal business operations.</li>
-                <li>Built and tested API endpoints with Postman, ensuring correctness across various request types and edge cases.</li>
-                <li>Collaborated with senior engineers to review architecture decisions and implement best practices for data modeling.</li>
-                <li>Wrote SQL queries and managed database schemas to support evolving application requirements.</li>
+                <li>Built REST API endpoints for managing employee records, payroll processing, and database interactions.</li>
+                <li>Designed and implemented SQL database schemas with indexing, reducing average query response time and improving system performance.</li>
+                <li>Added input validation and error handling, decreasing back-end service errors and improving data integrity for payroll operations.</li>
+                <li>Collaborated with senior engineers to review architecture decisions and align with best practices for enterprise data modeling.</li>
               </ul>
+              <p style={{ fontFamily: "var(--mono)", margin: "0.75rem 0 0", fontSize: "0.78rem", opacity: 0.5 }}>
+                .NET · C# · Python · SQL
+              </p>
             </div>
           </div>
         )}
@@ -98,11 +104,9 @@ export const ExperienceProjects = () => {
               <p style={{ fontFamily: "var(--mono)", margin: "0 0 0.75rem", fontSize: "0.78rem", opacity: 0.5 }}>
                 FastAPI · Gemini AI · Google Maps API · Supabase
               </p>
-              <ul style={{ fontFamily: "var(--sans)", margin: 0, paddingLeft: "1.2rem", fontSize: "0.95rem", lineHeight: 1.85, opacity: 0.85, display: "flex", flexDirection: "column", gap: "0.4rem" }}>
-                <li>Built AI-powered dog walking app featuring embedded Google Maps with live GPS tracking, walk history logging, and breed-specific exercise recommendations across 200+ breeds.</li>
-                <li>Engineered FastAPI backend with 8+ RESTful endpoints integrating Gemini AI for photo-based breed identification, Google Maps Platform (Routes, Places, Weather) for route generation, and real-time air quality and UV index data to flag health risks.</li>
-                <li>Implemented full CRUD functionality with Supabase for dog profile and walk history management, processing 5+ environmental factors (temperature, humidity, AQI, UV index, wind) to generate safety scores.</li>
-              </ul>
+              <p style={{ fontFamily: "var(--sans)", margin: 0, fontSize: "0.95rem", lineHeight: 1.85, opacity: 0.85 }}>
+                A dog walking app that generates optimized walking routes and real-time pet care recommendations based on user preferences, local weather, and park conditions.
+              </p>
               <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem" }}>
                 <p style={{ fontFamily: "var(--mono)", margin: 0, fontSize: "0.78rem", opacity: 0.5 }}>
                   Python · React · SQL
@@ -129,6 +133,42 @@ export const ExperienceProjects = () => {
                     Devpost ↗
                   </a>
                 </div>
+              </div>
+            </div>
+            <div
+              className="exp-card"
+              style={{
+                padding: "1.5rem",
+                borderRadius: "12px",
+                background: "color-mix(in srgb, var(--text) 6%, transparent)",
+                border: "1px solid color-mix(in srgb, var(--text) 12%, transparent)",
+              }}
+            >
+              <div className="exp-card-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.35rem" }}>
+                <h3 style={{ fontFamily: "var(--sans)", fontSize: "1.05rem", fontWeight: 600, margin: 0, color: "var(--text-h)" }}>
+                  Weekli — AI Study Companion
+                </h3>
+              </div>
+              <p style={{ fontFamily: "var(--mono)", margin: "0 0 0.75rem", fontSize: "0.78rem", opacity: 0.5 }}>
+                Claude AI · Supabase
+              </p>
+              <p style={{ fontFamily: "var(--sans)", margin: 0, fontSize: "0.95rem", lineHeight: 1.85, opacity: 0.85 }}>
+                An AI-powered study companion that generates personalized weekly study plans, practice questions, and learning resources based on user goals and progress.
+              </p>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem" }}>
+                <p style={{ fontFamily: "var(--mono)", margin: 0, fontSize: "0.78rem", opacity: 0.5 }}>
+                  Tailwind CSS · TypeScript · SQL · React
+                </p>
+                <a
+                  href="https://github.com/Kwasiga06/Weekli"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ fontFamily: "var(--mono)", fontSize: "0.78rem", opacity: 0.55, textDecoration: "none", transition: "opacity 0.2s" }}
+                  onMouseEnter={e => e.currentTarget.style.opacity = 1}
+                  onMouseLeave={e => e.currentTarget.style.opacity = 0.55}
+                >
+                  GitHub ↗
+                </a>
               </div>
             </div>
           </div>

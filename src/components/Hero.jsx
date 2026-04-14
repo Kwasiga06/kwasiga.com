@@ -1,4 +1,3 @@
-import profileImg from "../assets/profile.png";
 import Typewriter from 'typewriter-effect';
 
 export const Hero = () => {
@@ -13,7 +12,6 @@ export const Hero = () => {
             options={{ cursor: "|", delay: 50}}
           />
         </h1>
-        <img src={profileImg} alt="Profile" className="hero-img" style={{ width: "18rem", height: "17rem", borderRadius: "1rem", objectFit: "cover" }} />
       </div>
     </section>
   );

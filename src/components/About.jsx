@@ -15,7 +15,7 @@ export const About = () => {
             }}
         >
             <div style={{maxWidth: "750px", width: "100%", textAlign: "center" }}>
-                <p style={{ fontFamily: "var(--mono)", fontSize: "1.05rem", lineHeight: 1.9, margin: 0, color: "white"}}>
+                <p style={{ fontFamily: "var(--mono)", fontSize: "1.05rem", lineHeight: 1.9, margin: 0, color: "var(--text-h)" }}>
                     <DecryptedText
                         text="A Math & CS student at Fordham University. I enjoy picking up new languages and technologies, binge-watching shows at an unhealthy pace, and building projects that automate my laziness."
                         animateOn="inViewHover"
