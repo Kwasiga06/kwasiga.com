@@ -113,34 +113,6 @@ export const ExperienceProjects = () => {
                 </div>
               </div>
             </div>
-            <div>
-              <div className="exp-card-header" style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "0.35rem" }}>
-                <h3 style={{ fontFamily: "var(--mono)", fontSize: "0.9rem", fontWeight: 600, margin: 0, color: "var(--text-h)" }}>
-                  Weekli — AI Study Companion
-                </h3>
-              </div>
-              <p style={{ fontFamily: "var(--mono)", margin: "0 0 0.75rem", fontSize: "0.7rem", opacity: 0.5 }}>
-                Claude AI · Supabase
-              </p>
-              <p style={{ fontFamily: "var(--mono)", margin: 0, fontSize: "0.88rem", lineHeight: 1.9, color: "var(--text-h)" }}>
-                An AI-powered study companion that generates personalized weekly study plans, practice questions, and learning resources based on user goals and progress.
-              </p>
-              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem" }}>
-                <p style={{ fontFamily: "var(--mono)", margin: 0, fontSize: "0.7rem", opacity: 0.5 }}>
-                  Tailwind CSS · TypeScript · SQL · React
-                </p>
-                <a
-                  href="https://github.com/Kwasiga06/Weekli"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ fontFamily: "var(--mono)", fontSize: "0.7rem", opacity: 0.55, textDecoration: "none", transition: "opacity 0.2s" }}
-                  onMouseEnter={e => e.currentTarget.style.opacity = 1}
-                  onMouseLeave={e => e.currentTarget.style.opacity = 0.55}
-                >
-                  GitHub ↗
-                </a>
-              </div>
-            </div>
           </div>
         )}
       </div>

@@ -1,5 +1,5 @@
 import DecryptedText from './functions/DecryptedText';
-import { SiTypescript, SiReact, SiJavascript, SiPython, SiTailwindcss, SiCplusplus, SiPostgresql } from 'react-icons/si';
+import { SiGo, SiPython, SiCplusplus, SiPostgresql } from 'react-icons/si';
 
 export const About = () => {
     return (
@@ -17,7 +17,7 @@ export const About = () => {
             <div style={{maxWidth: "750px", width: "100%", textAlign: "center" }}>
                 <p style={{ fontFamily: "var(--mono)", fontSize: "1.05rem", lineHeight: 1.9, margin: 0, color: "var(--text-h)" }}>
                     <DecryptedText
-                        text="A Math & CS student at Fordham University. I enjoy picking up new languages and technologies, binge-watching shows at an unhealthy pace, and building projects that automate my laziness."
+                        text="A Math & CS student at Fordham University interested in backend systems, performance, and security. I enjoy picking up new languages and technologies, optimizing things until they’re slightly faster than necessary and binge-watching shows at an unhealthy pace."
                         animateOn="inViewHover"
                         sequential
                         revealDirection="start"
@@ -29,11 +29,8 @@ export const About = () => {
 
             <div style={{ display: "flex", gap: "1.5rem", flexWrap: "wrap", justifyContent: "center" }}>
                 {[
-                    { Icon: SiTypescript, label: "TypeScript", color: "#3178C6" },
-                    { Icon: SiReact, label: "React", color: "#61DAFB" },
-                    { Icon: SiJavascript, label: "JavaScript", color: "#F7DF1E" },
+                    { Icon: SiGo, label: "Go", color: "#00ADD8" },
                     { Icon: SiPython, label: "Python", color: "#3776AB" },
-                    { Icon: SiTailwindcss, label: "Tailwind", color: "#06B6D4" },
                     { Icon: SiCplusplus, label: "C++", color: "#00599C" },
                     { Icon: SiPostgresql, label: "SQL", color: "#4169E1" },
                 ].map(({ Icon, label, color }) => (
